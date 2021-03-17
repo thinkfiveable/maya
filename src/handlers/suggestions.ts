@@ -1,3 +1,1 @@
-export class SuggestionsHandler {
-
-}
+export class SuggestionsHandler {}
