@@ -1,4 +1,3 @@
-<!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <h3 align="center">Maya</h3>
@@ -15,8 +14,7 @@
 </p>
 
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+## 📝 About The Project
 
 Maya is a multi-purpose, community-driven Discord bot built for the Fiveable student community.
 
@@ -26,37 +24,40 @@ This section should list any major frameworks that you built your project using.
 * [Discord.js](https://discord.js.org/)
 * [Akairo](https://github.com/discord-akairo/discord-akairo)
 * [Mongoose](https://mongoosejs.com/)
+* [Signale](https://www.npmjs.com/package/signale)
 
 
-<!-- GETTING STARTED -->
-## Getting Started
+## 👋 Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+### Pre-Requisites
 
-### Installation
+* A Mongo DB instance (self-hosted or Mongo Atlas) with a URI.
+* Discord Bot Token [(Guide)](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot)
 
-1. Clone the repo
+### Local Installation
+
+1. Clone the repo.
 ```sh
 https://github.com/cnnor/Maya.git
+cd Maya
 ```
-2. Install NPM packages
+2. Install dependencies.
 ```sh
 npm install
 ```
-3. Remove `-example` from `.env-example` and replace variables
+3. Remove `-example` from `.env-example` and replace variables.
 ```
 TOKEN=DISCORD BOT TOKEN
 OWNER_ID=USER ID OF THE OWNER
 MONGO_URI=URI TO YOUR MONGO DATABASE
 ```
-4. Start using ts-node and Nodemon
+4. Start using ts-node and Nodemon.
 ```sh
-npm start
+npm run start
 ```
 
-<!-- LICENSE -->
-## License
+
+## ⚖️ License
 
 ```
 MIT License
