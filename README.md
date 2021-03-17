@@ -16,10 +16,10 @@
 
 ## 📝 About The Project
 
-Maya is a multi-purpose, community-driven Discord bot built for the Fiveable student community.
+Maya is a multi-purpose, community-driven Discord bot built for the Fiveable student community. In addition to providing utilities for server management and moderation, this project is a learning opportunity for contributors and maintainers.
 
 ### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+
 * [TypeScript](https://www.typescriptlang.org/)
 * [Discord.js](https://discord.js.org/)
 * [Akairo](https://github.com/discord-akairo/discord-akairo)
@@ -56,6 +56,11 @@ MONGO_URI=URI TO YOUR MONGO DATABASE
 npm run start
 ```
 
+### Resources
+
+* [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)
+* [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
+* [TypeScript Deep Dive](https://basarat.gitbook.io/typescript/)
 
 ## ⚖️ License
 
