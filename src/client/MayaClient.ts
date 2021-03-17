@@ -20,7 +20,12 @@ const commandsPath = join(__dirname, "..", "commands");
 const listenersPath = join(__dirname, "..", "listeners");
 const inhibitorsPath = join(__dirname, "..", "inhibitors");
 
-type CONFIG_OPTIONS = {MONGO_URI: string, TOKEN: string, OWNER_ID: string, DEFAULT_PREFIX: string};
+type CONFIG_OPTIONS = {
+  MONGO_URI: string;
+  TOKEN: string;
+  OWNER_ID: string;
+  DEFAULT_PREFIX: string;
+};
 
 /** Represents a bot client. */
 export class MayaClient extends AkairoClient {
@@ -46,11 +51,7 @@ export class MayaClient extends AkairoClient {
     );
 
     this.logger = new Signale({
-      secrets: [
-        this.config.TOKEN,
-        this.config.OWNER_ID,
-        this.config.MONGO_URI,
-      ],
+      secrets: [this.config.TOKEN, this.config.OWNER_ID, this.config.MONGO_URI],
     });
 
     this.settings = new SettingsProvider(SettingsModel, this);
@@ -59,7 +60,8 @@ export class MayaClient extends AkairoClient {
       directory: commandsPath,
       prefix: async (message) =>
         message.guild
-          ? await this.settings.get<string>(message.guild.id, "prefix") ?? this.config.DEFAULT_PREFIX
+          ? (await this.settings.get<string>(message.guild.id, "prefix")) ??
+            this.config.DEFAULT_PREFIX
           : this.config.DEFAULT_PREFIX,
       allowMention: true,
       commandUtil: true,

@@ -36,10 +36,9 @@ export default class HelpCommand extends Command {
   async exec(message: Message, { command }: { command?: Command }) {
     if (!command) return this.allCommands(message);
 
-    const prefix = await this.client.settings.get(
-      message.guild!.id,
-      "prefix",
-    ) ?? this.client.config.DEFAULT_PREFIX;
+    const prefix =
+      (await this.client.settings.get(message.guild!.id, "prefix")) ??
+      this.client.config.DEFAULT_PREFIX;
 
     const embed = new MessageEmbed()
       .setColor(Colors.TEAL)
@@ -73,10 +72,9 @@ export default class HelpCommand extends Command {
   }
 
   async allCommands(message: Message) {
-    const prefix = await this.client.settings.get(
-      message.guild!.id,
-      "prefix",
-    ) ?? this.client.config.DEFAULT_PREFIX;
+    const prefix =
+      (await this.client.settings.get(message.guild!.id, "prefix")) ??
+      this.client.config.DEFAULT_PREFIX;
 
     const embed = new MessageEmbed()
       .setColor(Colors.TEAL)

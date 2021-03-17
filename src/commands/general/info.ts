@@ -12,10 +12,9 @@ export default class InfoCommand extends Command {
   }
 
   async exec(message: any) {
-    const prefix = await this.client.settings.get(
-      message.guild!.id,
-      "prefix",
-    ) ?? this.client.config.DEFAULT_PREFIX;
+    const prefix =
+      (await this.client.settings.get(message.guild!.id, "prefix")) ??
+      this.client.config.DEFAULT_PREFIX;
     const totalCommands = this.client.commandHandler.modules.size;
 
     const embed = new MessageEmbed()

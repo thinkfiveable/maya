@@ -41,14 +41,9 @@ export class SettingsProvider {
   }
 
   /** Gets a setting from the cached items. */
-  async get<T>(
-    guildID: string,
-    setting: string,
-  ): Promise<T | null> {
-    console.log(this.items.get(guildID))
-
+  async get<T>(guildID: string, setting: string): Promise<T | null> {
     if (this.items.has(guildID)) return this.items.get(guildID)[setting];
-    return (await this.model.findOne({ "id": guildID }))?.[setting] ?? null;
+    return (await this.model.findOne({ id: guildID }))?.[setting] ?? null;
   }
 
   /** Sets and stores a setting. */

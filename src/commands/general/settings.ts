@@ -11,7 +11,7 @@ export default class SettingsCommand extends Command {
       description: {
         content: "Checks the latency of the bot.",
         usage: "[setting] [value]",
-        example: ["prefix $", "modlogsChannel 12345678910111213"],
+        example: ["settings prefix $", "settings modlogsChannel #channel"],
       },
       args: [
         {
@@ -28,25 +28,25 @@ export default class SettingsCommand extends Command {
     });
   }
 
-  async exec(
-    message: Message,
-    { setting, value }: { setting?: string; value?: string }
-  ) {
-
+  async exec( message: Message, { setting, value }: { setting?: string; value?: string }) {
     if (!setting) return this.settingsList(message);
 
     const currentSetting = await this.client.settings.get<string>(
       message.guild!.id,
       setting
     );
-    
+
     if (currentSetting === undefined)
-      return message.channel.send(Embeds.error(
-        "I couldn't find a setting with that name. Try the command with no arguments to get a list of settings."
-      ));
-      
-    // the reason we do null and undefined checks here is because otherwise it'll reject things like the number 0 incase that ever becomes a valid settings value
-    if(value === null) return message.channel.send(`The current value for \`${setting}\` is \`${currentSetting}\``)
+      return message.channel.send(
+        Embeds.error(
+          "I couldn't find a setting with that name. Try the command with no arguments to get a list of settings."
+        )
+      );
+
+    if (value === null)
+      return message.channel.send(
+        `The current value for \`${setting}\` is \`${currentSetting}\``
+      );
 
     await this.client.settings.set(message.guild!.id, setting, value);
 
