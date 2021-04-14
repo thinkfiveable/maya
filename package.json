@@ -9,7 +9,8 @@
     "build": "tsc",
     "build:live": "nodemon --watch 'src/**/**' --exec \"ts-node\" src/index.ts",
     "lint": "npx eslint src --ext .js,.ts",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -51,14 +52,7 @@
   },
   "lint-staged": {
     "**/*.{js,ts}": [
-      "npm run lint:fix",
-      "git add"
+      "npm run lint:fix"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   }
 }
