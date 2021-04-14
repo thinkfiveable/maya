@@ -7,7 +7,7 @@ export default class InfoCommand extends Command {
     super('info', {
       aliases: ['info', 'about', 'hello'],
       category: 'general',
-      description: { content: 'Displays general information about the bot.' },
+      description: { content: 'Displays general information about the bot.' }
     })
   }
 

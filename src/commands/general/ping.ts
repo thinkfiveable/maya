@@ -8,7 +8,7 @@ export default class PingCommand extends Command {
       aliases: ['ping', 'pong', 'latency'],
       category: 'general',
       description: { content: 'Checks the latency of the bot.' },
-      cooldown: 15000,
+      cooldown: 15000
     })
   }
 

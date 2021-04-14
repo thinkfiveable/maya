@@ -6,7 +6,7 @@ export default class CooldownListener extends Listener {
   constructor() {
     super('cooldown', {
       emitter: 'commandHandler',
-      event: 'cooldown',
+      event: 'cooldown'
     })
   }
 

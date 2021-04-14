@@ -10,7 +10,7 @@ export default class HelpCommand extends Command {
       description: {
         content: 'Displays information about a command or a list of available commands.',
         usage: '[command]',
-        example: ['help warn', 'help prefix'],
+        example: ['help warn', 'help prefix']
       },
       args: [
         {
@@ -25,10 +25,10 @@ export default class HelpCommand extends Command {
               "Sorry. I still couldn't find a command with that name. Use the command without any arguments to get a list of available commands."
             ),
             retries: 1,
-            optional: true,
-          },
-        },
-      ],
+            optional: true
+          }
+        }
+      ]
     })
   }
 

@@ -31,5 +31,5 @@ export const Embeds = {
     new MessageEmbed()
       .setColor(Colors.RED)
       .setTitle("⏰ You can't use that command yet.")
-      .setDescription(`Wait \`${Math.floor(ms / 1000)} seconds\` before trying again.`),
+      .setDescription(`Wait \`${Math.floor(ms / 1000)} seconds\` before trying again.`)
 }

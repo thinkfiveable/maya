@@ -18,8 +18,8 @@ const SettingsSchema: Schema = new Schema(
       // Suggestions
       suggestionsEnabled: { type: Boolean, required: true, default: false },
       suggestionsAutoCollect: { type: Boolean, required: true, default: false },
-      suggestionsChannel: { type: String, default: '' },
-    },
+      suggestionsChannel: { type: String, default: '' }
+    }
   },
   { minimize: false }
 )

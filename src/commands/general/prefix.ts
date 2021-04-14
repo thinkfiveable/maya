@@ -10,11 +10,11 @@ export default class PrefixCommand extends Command {
       args: [
         {
           id: 'newPrefix',
-          type: 'string',
-        },
+          type: 'string'
+        }
       ],
       category: 'general',
-      description: { content: 'Sets or displays the current prefix.' },
+      description: { content: 'Sets or displays the current prefix.' }
     })
   }
 

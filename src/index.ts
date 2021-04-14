@@ -13,7 +13,7 @@ const client = new MayaClient({
   OWNER_ID: process.env.OWNER_ID!,
   MONGO_URI: process.env.MONGO_URI!,
   TOKEN: process.env.TOKEN!,
-  DEFAULT_PREFIX: '!',
+  DEFAULT_PREFIX: '!'
 })
 
 client.start()

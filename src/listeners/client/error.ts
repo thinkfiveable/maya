@@ -4,7 +4,7 @@ export default class ErrorListener extends Listener {
   constructor() {
     super('error', {
       emitter: 'client',
-      event: 'error',
+      event: 'error'
     })
   }
 

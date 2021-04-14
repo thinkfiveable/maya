@@ -20,7 +20,7 @@ const SuggestionSchema: Schema = new Schema(
     content: { type: String, required: true },
     status: { type: String, required: true, default: 'waiting' },
     note: { type: String },
-    handlerID: { type: String },
+    handlerID: { type: String }
   },
   { minimize: false }
 )

@@ -4,7 +4,7 @@ export default class ReadyListener extends Listener {
   constructor() {
     super('ready', {
       emitter: 'client',
-      event: 'ready',
+      event: 'ready'
     })
   }
 
@@ -13,9 +13,9 @@ export default class ReadyListener extends Listener {
     return this.client.user!.setPresence({
       activity: {
         name: 'Parks and Recreation',
-        type: 'WATCHING',
+        type: 'WATCHING'
       },
-      status: 'online',
+      status: 'online'
     })
   }
 }

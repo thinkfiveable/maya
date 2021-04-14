@@ -11,20 +11,20 @@ export default class SettingsCommand extends Command {
       description: {
         content: 'Checks the latency of the bot.',
         usage: '[setting] [value]',
-        example: ['settings prefix $', 'settings modlogsChannel #channel'],
+        example: ['settings prefix $', 'settings modlogsChannel #channel']
       },
       args: [
         {
           id: 'setting',
-          type: 'string',
+          type: 'string'
         },
         {
           id: 'value',
           type: 'string',
-          match: 'rest',
-        },
+          match: 'rest'
+        }
       ],
-      userPermissions: 'MANAGE_GUILD',
+      userPermissions: 'MANAGE_GUILD'
     })
   }
 

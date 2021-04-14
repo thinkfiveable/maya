@@ -39,13 +39,13 @@ export class MayaClient extends AkairoClient {
         messageEditHistoryMaxSize: 2,
         disableMentions: 'everyone',
         ws: {
-          intents: [Intents.NON_PRIVILEGED],
-        },
+          intents: [Intents.NON_PRIVILEGED]
+        }
       }
     )
 
     this.logger = new Signale({
-      secrets: [this.config.TOKEN, this.config.OWNER_ID, this.config.MONGO_URI],
+      secrets: [this.config.TOKEN, this.config.OWNER_ID, this.config.MONGO_URI]
     })
 
     this.settings = new SettingsProvider(SettingsModel, this)
@@ -61,15 +61,15 @@ export class MayaClient extends AkairoClient {
       commandUtilLifetime: 3e5,
       commandUtilSweepInterval: 9e5,
       handleEdits: true,
-      defaultCooldown: 5000,
+      defaultCooldown: 5000
     })
 
     this.listenerHandler = new ListenerHandler(this, {
-      directory: listenersPath,
+      directory: listenersPath
     })
 
     this.inhibitorHandler = new InhibitorHandler(this, {
-      directory: inhibitorsPath,
+      directory: inhibitorsPath
     })
   }
 
@@ -80,7 +80,7 @@ export class MayaClient extends AkairoClient {
       .connect(this.config.MONGO_URI, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
-        keepAlive: true,
+        keepAlive: true
       })
       .catch((err) => {
         this.logger.fatal(err.message)
@@ -97,7 +97,7 @@ export class MayaClient extends AkairoClient {
     this.listenerHandler.setEmitters({
       commandHandler: this.commandHandler,
       inhibitorHandler: this.inhibitorHandler,
-      listenerHandler: this.listenerHandler,
+      listenerHandler: this.listenerHandler
     })
 
     this.commandHandler.loadAll()
