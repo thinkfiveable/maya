@@ -15,6 +15,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
     "@types/mongoose": "^5.10.3",
     "@types/node": "^14.14.35",
     "@types/signale": "^1.4.1",
@@ -27,6 +29,8 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-promise": "^4.3.1",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4",
     "nodemon": "^2.0.7",
     "prettier": "^2.2.1",
     "ts-node": "^9.1.1",
@@ -44,5 +48,17 @@
     "displayDate": true,
     "displayTimestamp": true,
     "uppercaseLabel": true
+  },
+  "lint-staged": {
+    "**/*.{js,ts}": [
+      "npm run lint:fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
