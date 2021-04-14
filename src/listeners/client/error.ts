@@ -1,14 +1,14 @@
-import { Listener } from "discord-akairo";
+import { Listener } from 'discord-akairo'
 
 export default class ErrorListener extends Listener {
   constructor() {
-    super("error", {
-      emitter: "client",
-      event: "error",
-    });
+    super('error', {
+      emitter: 'client',
+      event: 'error',
+    })
   }
 
   exec(error: Error) {
-    return this.client.logger.error(error);
+    return this.client.logger.error(error)
   }
 }

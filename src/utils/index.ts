@@ -1,2 +1,2 @@
-export { Colors } from "./Colors";
-export { Embeds } from "./Embeds";
+export { Colors } from './Colors'
+export { Embeds } from './Embeds'

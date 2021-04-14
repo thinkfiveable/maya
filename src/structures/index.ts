@@ -1,1 +1,1 @@
-export { SettingsProvider } from "./SettingsProvider";
+export { SettingsProvider } from './SettingsProvider'
