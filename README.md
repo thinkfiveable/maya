@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-  <h3 align="center">Maya</h3>
+  <h3 align="center"><img src="https://github.com/cnnor/Maya/blob/main/banner.png" alt="Banner" width="300"></h3>
 
   <p align="center">
     An open-source Discord bot built for the Fiveable community.
@@ -16,23 +16,18 @@
 
 ## 📝 About The Project
 
-Maya is a multi-purpose, community-driven Discord bot built for the Fiveable student community. In addition to providing utilities for server management and moderation, this project is a learning opportunity for contributors and maintainers.
+Maya is a multi-purpose, community-driven, single-guild Discord bot built for the Fiveable student community. It was built with functionality and customizability in mind, offering featurful moderation commands, utilities, reaction roles, and channel linking.
 
-### Built With
 
-* [TypeScript](https://www.typescriptlang.org/)
-* [Discord.js](https://discord.js.org/)
-* [Akairo](https://github.com/discord-akairo/discord-akairo)
-* [Mongoose](https://mongoosejs.com/)
-* [Signale](https://www.npmjs.com/package/signale)
+### Features
 
+* Moderation and server management commands.
+* Reaction roles and role management.
+* Link voice channels to other voice/text channels.
 
 ## 👋 Getting Started
 
-### Pre-Requisites
-
-* A Mongo DB instance (self-hosted or Mongo Atlas) with a URI.
-* Discord Bot Token [(Guide)](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot)
+For complete setup and usage instructions, see the [project wiki](https://github.com/cnnor/Maya/wiki).
 
 ### Local Installation
 
@@ -61,6 +56,10 @@ npm run start
 * [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)
 * [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
 * [TypeScript Deep Dive](https://basarat.gitbook.io/typescript/)
+
+### Contributing
+
+See the [contribution guide](https://github.com/cnnor/Maya/blob/main/CONTRIBUTING.md) if you're interested in contributing to Maya.
 
 ## ⚖️ License
 
