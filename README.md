@@ -1,15 +1,15 @@
 <br />
 <p align="center">
-  <h3 align="center"><img src="https://github.com/cnnor/Maya/blob/main/banner.png" alt="Banner" width="300"></h3>
+  <h3 align="center"><img src="https://github.com/thinkfiveable/maya/blob/main/banner.png" alt="Banner" width="300"></h3>
 
   <p align="center">
     An open-source Discord bot built for the Fiveable community.
     <br />
-    <a href="https://github.com/cnnor/Maya/issues">Report Bug</a>
+    <a href="https://github.com/thinkfiveable/maya/issues">Report Bug</a>
     ·
-    <a href="https://github.com/cnnor/Maya/issues">Request Feature</a>
+    <a href="https://github.com/thinkfiveable/maya/issues">Request Feature</a>
     ·
-    <a href="https://github.com/cnnor/Maya/pulls">Send a Pull Request</a>
+    <a href="https://github.com/thinkfiveable/maya/pulls">Send a Pull Request</a>
   </p>
 </p>
 
@@ -27,14 +27,14 @@ Maya is a multi-purpose, community-driven, single-guild Discord bot built for th
 
 ## 👋 Getting Started
 
-For complete setup and usage instructions, see the [project wiki](https://github.com/cnnor/Maya/wiki).
+For complete setup and usage instructions, see the [project wiki](https://github.com/thinkfiveable/maya/wiki).
 
 ### Local Installation
 
 1. Clone the repo.
 ```sh
-https://github.com/cnnor/Maya.git
-cd Maya
+https://github.com/thinkfiveable/maya.git
+cd maya
 ```
 2. Install dependencies.
 ```sh
@@ -59,7 +59,7 @@ npm run start
 
 ### Contributing
 
-See the [contribution guide](https://github.com/cnnor/Maya/blob/main/CONTRIBUTING.md) if you're interested in contributing to Maya.
+See the [contribution guide](https://github.com/thinkfiveable/maya/blob/main/CONTRIBUTING.md) if you're interested in contributing to Maya.
 
 ## ⚖️ License
 
